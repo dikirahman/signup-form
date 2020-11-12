@@ -1,0 +1,13 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #901af1, #8523e6, #7a28da, #702ccf, #672ec3, #5f2eba, #582eb0, #512ea7, #492c9d, #422a94, #3b288a, #352681);
+}
+.form {
+  width: 100vw;
+  height: 100vh;
+}
