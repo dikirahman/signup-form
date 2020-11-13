@@ -3,11 +3,44 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #901af1, #8523e6, #7a28da, #702ccf, #672ec3, #5f2eba, #582eb0, #512ea7, #492c9d, #422a94, #3b288a, #352681);
+  background-image: linear-gradient(to bottom, #7a36d9, #6935c7, #5a33b5, #4c30a2, #3f2c90, #3a2a89, #352981, #31277a, #32277c, #33277e, #34267f, #352681);
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+section {
+  margin: 1rem 0;
 }
 .form {
-  width: 90vw;
-  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__bg {
+  width: 70vw;
+  height: 400px;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15) !important;
+  background-image: linear-gradient(to bottom, #1a203a, #1b2141, #1d2248, #1f234e, #222355, #24235a, #27245f, #2a2464, #2b2569, #2d266e, #2e2673, #302778);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__card {
+  width: 40vw;
+  height: 300px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background-image: linear-gradient(to bottom, #583be5, #5439db, #5037d1, #4c35c7, #4833bd, #4532b6, #4330b0, #402fa9, #3e2ea4, #3c2d9e, #3a2c99, #382b94);
+}
+
+/*=== Mobile ===*/
+@media screen and (max-width: 576px) {
+  .form__bg {
+    width: 90vw;
+  }
+  .form__card {
+    width: 70vw;
+    border-radius: .5rem;
+  }
 }
