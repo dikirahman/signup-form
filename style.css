@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
 body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to bottom, #7a36d9, #6935c7, #5a33b5, #4c30a2, #3f2c90, #3a2a89, #352981, #31277a, #32277c, #33277e, #34267f, #352681);
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: '', sans-serif;
   width: 100vw;
   height: 100vh;
+  color: #FFF;
 }
 section {
   margin: 1rem 0;
@@ -19,7 +18,7 @@ section {
 }
 .form__bg {
   width: 70vw;
-  height: 400px;
+  height: 600px;
   border-radius: .5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15) !important;
   background-image: linear-gradient(to bottom, #1a203a, #1b2141, #1d2248, #1f234e, #222355, #24235a, #27245f, #2a2464, #2b2569, #2d266e, #2e2673, #302778);
@@ -28,19 +27,136 @@ section {
   align-items: center;
 }
 .form__card {
-  width: 40vw;
-  height: 300px;
+  width: 30vw;
+  height: 500px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background-image: linear-gradient(to bottom, #583be5, #5439db, #5037d1, #4c35c7, #4833bd, #4532b6, #4330b0, #402fa9, #3e2ea4, #3c2d9e, #3a2c99, #382b94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form__account {
+  display: flex;
+  padding: .2rem;
+  margin: 1rem 0;
+}
+.form__body span {
+  font-size: .8rem
+}
+.google, .github {
+  margin: 0 .2rem;
+  background: #262d40;
+  padding: .4rem .6rem;
+  font-size: .9rem;
+  border-radius: 1rem;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  padding: .2rem;
+}
+.form__input span {
+  margin: .2rem .5rem;
+  font-weight: 600;
+}
+.form__input input {
+  background: #262d40;
+  color: #FFF;
+  border-radius: 1rem;
+  border: none;
+  padding: .5rem .8rem;
+}
+.form__input input:hover, input:active, input:focus {
+  outline: none;
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem;
+}
+.privacy__toggle {
+  display: flex;
+}
+.privacy__toggle {
+  position: relative;
+}
+.privacy__toggle input {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  z-index: 1;
+  cursor: pointer;
+  left: -2px;
+  top: -2px;
+  opacity: 0;
+}
+.privacy__toggle span {
+  background: #262d40;
+  width: 1rem;
+  height: 1rem;
+  margin: .2rem;
+  border-radius: .25rem;
+}
+.privacy label {
+  font-size: .8rem;
+}
+
+.privacy__toggle input:checked ~ span{
+  
+  background: #7a36d9;
+  box-shadow: 0 0 .2rem #7a36d9 !important;
+}
+.privacy__toggle input:checked ~ span::after {
+  content: '';
+  position: absolute;
+  border-left: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  top: .3rem;
+  left: .5rem;
+  height: 6px;
+  width: 11px;
+  transform: rotate(-45deg);
+}
+.form__btn .btn {
+  background: #7a36d9;
+  border: none;
+  color: #FFF;
+  padding: .5rem 2rem;
+  margin: .2rem .2rem;
+  border-radius: 1rem;
+}
+.form__btn .btn button:hover, button:active, button:focus {
+  outline: none;
+  box-shadow: 0 0 1rem #7a36d9;
+}
+.already__account {
+  margin: .5rem 0;
+  font-size: .8rem;
+}
+.already__account a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 /*=== Mobile ===*/
 @media screen and (max-width: 576px) {
+  body {
+    height: auto;
+  }
   .form__bg {
     width: 90vw;
+    height: 550px;
   }
   .form__card {
     width: 70vw;
+    height: 450px;
     border-radius: .5rem;
   }
 }

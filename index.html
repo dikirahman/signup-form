@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signup Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,19 +16,20 @@
     <div class="form__bg">
     <div class="form__card">
       <div class="form__header">
-        <h2>SIGN UP</h2>
-        <span>Sign up with</span>
-        <div class="form__account">
-          <div class="google">
-            GOOGLE
-          </div>
-          <div class="github">
-            GITHUB
-          </div>
-        </div>
+        <h2>Sign Up</h2>
       </div>
       
       <div class="form__body">
+        <span>Sign in with</span>
+        <div class="form__account">
+          <div class="google">
+           <i class="bx bxl-google"></i> 
+            GOOGLE
+          </div>
+          <div class="github">
+          <i class="bx bxl-github"></i>  GITHUB
+          </div>
+        </div>
         <div class="form__input">
           <span>Name</span>
           <input class="input-text" type="text" name="name" placeholder="Text Name" />
@@ -40,8 +43,11 @@
           <input class="input-text" type="password" name="password" placeholder="Password" />
         </div>
         <div class="privacy">
-          <input type="checkbox" name="privacy" id="privacy" />
-          <span>I agree</span>
+          <div class="privacy__toggle">
+          <input type="checkbox" name="privacy" id="privacy" value="agree" />
+          <span></span>
+          </div>
+          <label>I agree form terms & privacy</label>
         </div>
         <div class="form__btn">
           <button class="btn" type="submit">Create Account</button>
